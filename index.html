@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <a href="#" target="_blank" onclick="yourlink()">Click Here</a>
+
+    <script>
+      function yourlink() {
+        const englishWords = [
+          "https://www.bing.com/search?q=Adipurush+2023&FORM=SNAPST&filters=sid:%22fe305082-3410-04c2-9933-5c42c12aef73%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Baahubali+2%3a+The+Conclusion+2017&FORM=SNAPST&filters=sid:%22886aadca-9697-0b67-cedc-ce980ba8d0bb%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22&crslsl=0&efirst=1",
+          "https://www.bing.com/search?q=Mirchi+2013&FORM=SNAPST&filters=sid:%22977b55b3-1660-d9d4-e6bd-cee1c65710a5%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22&crslsl=0&efirst=1",
+          "https://www.bing.com/search?q=Rebel+2012&FORM=SNAPST&filters=sid:%2217cfda7d-12d5-9d43-a9a4-4895813ed093%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22&crslsl=0&efirst=1",
+          "https://www.bing.com/search?q=Mr+Perfect+2011&FORM=SNAPST&filters=sid:%226235c32c-fef9-af00-3a66-c47bce20cae6%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22&crslsl=1184&efirst=1",
+          "https://www.bing.com/search?q=Bujjigaadu%3a+Made+in+Chennai+2008&FORM=SNAPST&filters=sid:%2299dca761-79ba-99b0-c83f-de19fd042edd%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22&crslsl=1184&efirst=1",
+          "https://www.bing.com/search?q=Darling+2010&FORM=SNAPST&filters=sid:%22d3138d23-df25-b898-ed28-baaadaafe0b0%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Chatrapathi+2005&FORM=SNAPST&filters=sid:%22df54802e-fb02-6009-e066-e80449035d0d%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22&crslsl=1385&efirst=1",
+          "https://www.bing.com/search?q=Ek+Niranjan+2009&FORM=SNAPST&filters=sid:%22a70d0d9c-62f8-e20e-9694-1937b71725d9%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22&crslsl=1864&efirst=1",
+          "https://www.bing.com/search?q=Action+Jackson+2014&FORM=SNAPST&filters=sid:%22fed54ae3-85eb-4713-80bf-ba766130f6ed%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Yogi+2007&FORM=SNAPST&filters=sid:%2264cb8228-9ada-e731-62ea-92d5987ae780%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Chakram+2005&FORM=SNAPST&filters=sid:%224c569b39-259c-80c9-8307-4e26b3956f15%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Varsham+2004&FORM=SNAPST&filters=sid:%228cf6ef68-2ea7-cdb8-7cbc-3fe753dfc24b%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Eeshwar+2002&FORM=SNAPST&filters=sid:%227e8ce8fa-636d-46c0-641e-7b813668fb41%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Raghavendra+2003&FORM=SNAPST&filters=sid:%226c844ea1-7ac2-74cb-9017-3916c0658223%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Guntur+Kaaram+2024&FORM=SNAPST&filters=sid:%22ef6ff46d-8aee-1f66-2a68-51007209ce70%22+fcid:%2238dd8581-454a-545b-1726-6275f10534a1%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Sarkaru+Vaari+Paata+2022&FORM=SNAPST&filters=sid:%224307a914-aaf6-4974-99a8-4fd58e081688%22+fcid:%2238dd8581-454a-545b-1726-6275f10534a1%22+fccat:%229%22&crslsl=0&efirst=1",
+          "https://www.bing.com/search?q=Salaar+2023&FORM=SNAPST&filters=sid:%228d5222a6-b6d8-1bc4-421c-4d46d6e666f3%22+fcid:%22e5ce93e6-2670-a914-64e8-67d8834ad478%22+fccat:%229%22",
+          "https://www.bing.com/search?FORM=KCEXPC&q=bajirao+mastani&filters=sid:%22e51266a5-80f1-390c-2d47-80e39b0caf04%22+lite:%22.S2NkUmVsYXRpb25eMDJiNjlkN2ItMzY2Yy00ZWI4LWExZjEtM2I5Y2Q3ZTIyYmQ0Xl5eXiRFbnRpdHkyX2Vu%22",
+          "https://www.bing.com/search?FORM=KCEXPC&q=2.0&filters=sid:%225d6346b9-2b6a-4387-b914-edbda91ecdf4%22+lite:%22.S2NkUmVsYXRpb25eMDJiNjlkN2ItMzY2Yy00ZWI4LWExZjEtM2I5Y2Q3ZTIyYmQ0Xl5eXiRFbnRpdHkyX2Vu%22",
+          "https://www.bing.com/search?FORM=KCEXPC&q=Sultan&filters=sid:%224eb894b0-0a8a-460b-9108-2fb50bced22a%22+lite:%22.S2NkUmVsYXRpb25eMDJiNjlkN2ItMzY2Yy00ZWI4LWExZjEtM2I5Y2Q3ZTIyYmQ0Xl5eXiRFbnRpdHkyX2Vu%22",
+          "https://www.bing.com/search?q=Eros+2004&FORM=SNAPST&filters=sid:%224a36a04d-3b0b-2df7-d064-80c5444b7025%22+fcid:%22actor.film%22+pivot:%2213515c0a-a4eb-a57d-b17e-62511d7f4192%22+fccat:%229%22",
+          "https://www.bing.com/search?q=The+Soloist+2009&FORM=SNAPST&filters=sid:%226177255b-d9cb-5606-7377-375c9bd6c556%22+fcid:%22actor.film%22+pivot:%2213515c0a-a4eb-a57d-b17e-62511d7f4192%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Two+Girls+and+a+Guy+1997&FORM=SNAPST&filters=sid:%2260f46ae4-1ab1-a3ef-3407-4d1fd0f9b4cf%22+fcid:%22actor.film%22+pivot:%2213515c0a-a4eb-a57d-b17e-62511d7f4192%22+fccat:%229%22",
+          "https://www.bing.com/search?q=In+Dreams+1999&FORM=SNAPST&filters=sid:%2284876886-b68a-d224-2ad3-9e9470673c20%22+fcid:%22actor.film%22+pivot:%2213515c0a-a4eb-a57d-b17e-62511d7f4192%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Heart+and+Souls+1993&FORM=SNAPST&filters=sid:%2219c48fa9-8c96-e40f-1979-eb4567e70bea%22+fcid:%22actor.film%22+pivot:%2213515c0a-a4eb-a57d-b17e-62511d7f4192%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Kyra+Sedgwick&FORM=SNAPST&filters=sid:%22012f190d-29be-9c17-b766-fbdb2b3b42cc%22+fcid:%22movie.cast%22+pivot:%2219c48fa9-8c96-e40f-1979-eb4567e70bea%22+fccat:%222%22",
+          "https://www.bing.com/ck/a?!&&p=6007f2fb59ef2280JmltdHM9MTcwOTUxMDQwMCZpZ3VpZD0wOTgwOWQ4MC03NzVkLTYyOWMtMDJkZS04OWFmNzZlZjYzNDQmaW5zaWQ9NjEyNQ&ptn=3&ver=2&hsh=3&fclid=09809d80-775d-629c-02de-89af76ef6344&u=a1L3NlYXJjaD9GT1JNPVNOQVBTVCZxPUNsZW1lbmN5KzIwMTkmZmlsdGVycz1mY2lkOiJhY3Rvci5maWxtIitwaXZvdDoiNjIzNzZkMzMtNjhmOC04NTU0LTVlZjgtMWNjMmI4YjdhMzhkIitzaWQ6ImZlMDViYWJlLTFmOTEtYjI4Ni02NmU2LWFlZDliZDkzNzllOSI&ntb=1",
+          "https://www.bing.com/search?q=Marc+Shaiman&FORM=SNAPST&filters=sid:%22c5d59077-5ce1-7992-c918-d00d723af8bb%22+fcid:%22movie.cast%22+pivot:%2219c48fa9-8c96-e40f-1979-eb4567e70bea%22+fccat:%222%22",
+          "https://www.bing.com/search?q=Eric+Lloyd&FORM=SNAPST&filters=sid:%221ec451d9-31b4-868a-4a08-7962adf855f5%22+fcid:%22movie.cast%22+pivot:%2219c48fa9-8c96-e40f-1979-eb4567e70bea%22+fccat:%222%22",
+          "https://www.bing.com/search?q=Wren+T.+Brown&FORM=SNAPST&filters=sid:%22accd629c-c536-4dd2-faf6-518cb96d4eb2%22+fcid:%22movie.cast%22+pivot:%2219c48fa9-8c96-e40f-1979-eb4567e70bea%22+fccat:%222%22",
+          "https://www.bing.com/search?q=Shannon+Orrock&FORM=SNAPST&filters=sid:%22380c307d-b4de-2482-9a85-b90306547f23%22+fcid:%22movie.cast%22+pivot:%2219c48fa9-8c96-e40f-1979-eb4567e70bea%22+fccat:%222%22",
+          "https://www.bing.com/search?q=Ingrid+Goes+West+2017&FORM=SNAPST&filters=sid:%22bd9cdc2e-8680-05f5-f9e8-1782b135342c%22+fcid:%229cd4c803-2a23-05c7-2449-3e388f01c2f5%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Very+Good+Girls+2013&FORM=SNAPST&filters=sid:%22ffa7c28b-2a8e-ccf7-507a-0c201172f009%22+fcid:%229cd4c803-2a23-05c7-2449-3e388f01c2f5%22+fccat:%229%22",
+          "https://www.bing.com/search?q=Zodiac+2007&FORM=SNAPST&filters=sid:%22da5f856c-4cca-4e5d-52a7-6c5ddc5aaf03%22+fcid:%22actor.film%22+pivot:%2213515c0a-a4eb-a57d-b17e-62511d7f4192%22+fccat:%229%22",
+        ];
+
+        for (let i = 0; i < 34; i += 4) {
+          window.open(englishWords[i]);
+          wait(6000 + Math.floor(Math.random() * 2000));
+          window.open(englishWords[i + 1]);
+          wait(6000 + Math.floor(Math.random() * 2000));
+          window.open(englishWords[i + 2]);
+          wait(6000 + Math.floor(Math.random() * 2000));
+          window.open(englishWords[i + 3]);
+          wait(900000 + Math.floor(Math.random() * 2000));
+        }
+      }
+      function wait(ms) {
+        var start = new Date().getTime();
+        var end = start;
+        while (end < start + ms) {
+          end = new Date().getTime();
+        }
+      }
+    </script>
+  </body>
+</html>
